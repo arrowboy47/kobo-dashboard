@@ -150,22 +150,21 @@
       async function fetchWeather(lat, lon) {
         // Open-Meteo is free and public, no API key needed
         // Docs: https://open-meteo.com/en/docs
-        const tz = encodeURIComponent(APP_CONFIG.timezone || "auto");
-        const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset&current_weather=true&timezone=${tz}&temperature_unit=fahrenheit`;
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset&current_weather=true&timezone=auto&temperature_unit=fahrenheit`;
         const res = await fetch(url);
         if (!res.ok) throw new Error("Weather API error");
         return await res.json();
       }
       
-      function formatTime(isoString) {
+      function formatTimeLocal(isoString) {
         const d = new Date(isoString);
         return d.toLocaleTimeString(APP_CONFIG.localeString || "en-US", {
           hour: "2-digit",
           minute: "2-digit",
-          hour12: true,
-          timeZone: APP_CONFIG.timezone,
+          hour12: true
         });
       }
+
 
       // Simple moon phase approximation (good enough for a dashboard)
       function getMoonPhaseInfo(date = new Date()) {
@@ -236,11 +235,11 @@
         const sunsetEl = document.getElementById("sunset-time");
 
         if (sunriseEl && weatherData?.daily?.sunrise?.[0]) {
-          sunriseEl.textContent = formatTime(weatherData.daily.sunrise[0]);
+          sunriseEl.textContent = formatTimeLocal(weatherData.daily.sunrise[0]);
         }
 
         if (sunsetEl && weatherData?.daily?.sunset?.[0]) {
-          sunsetEl.textContent = formatTime(weatherData.daily.sunset[0]);
+          sunsetEl.textContent = formatTimeLocal(weatherData.daily.sunset[0]);
         }
 
         // Moon phase
@@ -599,7 +598,7 @@
       
       .astro {
         position: absolute;
-        left: 50px;
+        left: 10px;
         bottom: 85px;                 /* sits above the timestamp */
         width: calc(100% - 50px - 380px); /* fill remaining space left of photo */
         display: grid;
