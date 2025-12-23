@@ -25,6 +25,25 @@
           console.log('Using default timezone and weather configuration');
         }
       }
+      
+      // get a random photo
+      async function loadRandomPhoto() {
+        try {
+          const res = await fetch("/api/photo");
+          if (!res.ok) throw new Error("Photo API failed");
+
+          const data = await res.json();
+          const img = document.getElementById("photo-img");
+
+          if (img && data.url) {
+            img.src = data.url;         // e.g. /pics/ds.jpg
+            img.loading = "eager";      // helps puppeteer render it in time
+            img.decoding = "sync";
+          }
+        } catch (e) {
+          console.warn("Photo load failed:", e);
+        }
+      }
 
       /**
        * Get current date info for calendar rendering.
@@ -131,10 +150,44 @@
       async function fetchWeather(lat, lon) {
         // Open-Meteo is free and public, no API key needed
         // Docs: https://open-meteo.com/en/docs
-        const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=weathercode,temperature_2m_max,temperature_2m_min&current_weather=true&timezone=auto`;
+        const tz = encodeURIComponent(APP_CONFIG.timezone || "auto");
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset&current_weather=true&timezone=${tz}&temperature_unit=fahrenheit`;
         const res = await fetch(url);
         if (!res.ok) throw new Error("Weather API error");
         return await res.json();
+      }
+      
+      function formatTime(isoString) {
+        const d = new Date(isoString);
+        return d.toLocaleTimeString(APP_CONFIG.localeString || "en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: true,
+          timeZone: APP_CONFIG.timezone,
+        });
+      }
+
+      // Simple moon phase approximation (good enough for a dashboard)
+      function getMoonPhaseInfo(date = new Date()) {
+        // Known new moon reference: 2000-01-06 18:14 UTC
+        const knownNewMoon = Date.UTC(2000, 0, 6, 18, 14, 0);
+        const days = (date.getTime() - knownNewMoon) / 86400000;
+        const lunations = days / 29.53058867;
+        const phase = lunations - Math.floor(lunations); // 0..1
+
+        const phases = [
+          { name: "New", emoji: "🌑" },
+          { name: "Waxing Crescent", emoji: "🌒" },
+          { name: "First Quarter", emoji: "🌓" },
+          { name: "Waxing Gibbous", emoji: "🌔" },
+          { name: "Full", emoji: "🌕" },
+          { name: "Waning Gibbous", emoji: "🌖" },
+          { name: "Last Quarter", emoji: "🌗" },
+          { name: "Waning Crescent", emoji: "🌘" },
+        ];
+
+        const idx = Math.floor(phase * 8 + 0.5) % 8;
+        return phases[idx];
       }
 
       /**
@@ -163,8 +216,8 @@
           <div class="weather__forecast-weekday">${weekday}</div>
           <div class="weather__forecast-emoji">${emoji}</div>
           <div class="weather__forecast-temp">
-            <span class="weather__temp-max">${tempMax}°C</span>
-            <span class="weather__temp-min">${tempMin}°C</span>
+            <span class="weather__temp-max">${tempMax}°F</span>
+            <span class="weather__temp-min">${tempMin}°F</span>
           </div>
         `;
           weatherForecastDiv.appendChild(dayDiv);
@@ -177,6 +230,24 @@
           cityDiv.textContent = `📍 ${weatherData.timezone.replace("_", " ")}`;
         } else {
           cityDiv.textContent = `📍 ${APP_CONFIG.weather.name}`;
+        }
+        // Sunrise / Sunset
+        const sunriseEl = document.getElementById("sunrise-time");
+        const sunsetEl = document.getElementById("sunset-time");
+
+        if (sunriseEl && weatherData?.daily?.sunrise?.[0]) {
+          sunriseEl.textContent = formatTime(weatherData.daily.sunrise[0]);
+        }
+
+        if (sunsetEl && weatherData?.daily?.sunset?.[0]) {
+          sunsetEl.textContent = formatTime(weatherData.daily.sunset[0]);
+        }
+
+        // Moon phase
+        const moonEl = document.getElementById("moon-phase");
+        if (moonEl) {
+          const mp = getMoonPhaseInfo(new Date());
+          moonEl.textContent = `${mp.emoji} ${mp.name}`;
         }
       }
 
@@ -197,8 +268,10 @@
       async function initDashboard() {
         // Load configuration first
         await loadAppConfig();
+        await loadRandomPhoto();
+
         
-        renderCalendar();
+        // renderCalendar();
 
         // Set up Weather API response and rendering
         try {
@@ -235,7 +308,7 @@
           const month = String(timezoneTime.getMonth() + 1).padStart(2, '0');
           const hour = String(timezoneTime.getHours()).padStart(2, '0');
           const minute = String(timezoneTime.getMinutes()).padStart(2, '0');
-          const pretty = `${day}/${month} - ${hour}h${minute}`;
+          const pretty = `${month}/${day} ${hour}:${minute}`;
           const span = document.querySelector('.weather__timestamp-time');
 
           if (span) {
@@ -445,7 +518,7 @@
       .weather__forecast {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 16px;
+        gap: 10px;
       }
 
       .weather__title {
@@ -485,19 +558,74 @@
       }
 
       .weather__timestamp {
-        margin-top: 30px;
+        position: absolute;
+        bottom: 30px;
+        left: 50px;
         font-size: 25px;
       }
 
       .calendar-container {
-        padding: 50px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+      }
+      
+      .photo {
+        position: absolute;
+        right: 20px;   /* match your container padding */
+        width: 390px;  /* tweak for your layout */
+        bottom: 0px;
+        height: 400px; /* tweak for your layout */
+        border-radius: 16px;
+        overflow: hidden;
+        background: #fff;
+      }
+
+      /* Image fills the box nicely */
+      .photo__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* fills box, crops if needed */
+        display: block;
       }
 
       .calendar {
         display: flex;
         flex-direction: column;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
       }
+      
+      .astro {
+        position: absolute;
+        left: 50px;
+        bottom: 85px;                 /* sits above the timestamp */
+        width: calc(100% - 50px - 380px); /* fill remaining space left of photo */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+      
+      .astro__item {
+        background: white;
+        border-radius: 16px;
+        padding: 14px 16px;
+        text-align: center;
+      }
+
+      .astro__label {
+        font-size: 30px;
+        color: #666;
+        margin-bottom: 6px;
+        font-weight: 600;
+      }
+
+      .astro__value {
+        font-size: 34px;
+        font-weight: 800;
+      }
+
 
       .calendar__weekday {
         padding: 0 15px;
@@ -505,10 +633,10 @@
 
       .calendar__title {
         display: flex;
-        gap: 30px;
+        gap: 10px;
         align-items: center;
         justify-content: center;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       }
 
       .calendar__date {
@@ -558,48 +686,48 @@
             <h2>|</h2>
             <h2 class="calendar__year">2025</h2>
           </div>
-          <table class="calendar__table">
-            <thead>
-              <tr>
-                <th class="calendar__weekday">Sun</th>
-                <th class="calendar__weekday">Mon</th>
-                <th class="calendar__weekday">Tue</th>
-                <th class="calendar__weekday">Wed</th>
-                <th class="calendar__weekday">Thu</th>
-                <th class="calendar__weekday">Fri</th>
-                <th class="calendar__weekday">Sat</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="calendar__date">1</td>
-                <td class="calendar__date">2</td>
-                <td class="calendar__date">3</td>
-                <td class="calendar__date">4</td>
-                <td class="calendar__date">5</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
 
         <!-- Placeholder for weather -->
         <div class="weather">
-          <h3 class="weather__title">Weather forecast</h3>
-
           <div class="weather__forecast">
             <div class="weather__forecast-day current">
               <div class="weather__forecast-weekday">Mon</div>
               <div class="weather__forecast-temp">20°C / 12°C</div>
             </div>
           </div>
+          
 
           <!-- Placeholder for city and country code -->
           <div class="weather__city">City, CC</div>
 
           <div class="weather__timestamp">
-            Last updated at:
+            Last updated:
             <span class="weather__timestamp-time"></span>
           </div>
+        </div>
+
+        <!-- Sunrise / Sunset / Moon -->
+        <div class="astro">
+          <div class="astro__item">
+            <div class="astro__label">Sunrise</div>
+            <div class="astro__value" id="sunrise-time">--:--</div>
+          </div>
+
+          <div class="astro__item">
+            <div class="astro__label">Sunset</div>
+            <div class="astro__value" id="sunset-time">--:--</div>
+          </div>
+
+          <div class="astro__item">
+            <div class="astro__label">Moon</div>
+            <div class="astro__value" id="moon-phase">--</div>
+          </div>
+        </div>
+        
+        <!-- Placeholder for photo -->
+        <div class="photo">
+          <img class="photo__img" id="photo-img" alt="Daily photo" />
         </div>
       </div>
     </div>

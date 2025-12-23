@@ -1,0 +1,300 @@
+2025-12-22 23:12:12,543 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-22 23:12:14,112 | INFO | Processing events for date: 2025-12-22 (HinduHolidays)
+2025-12-22 23:12:14,112 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-22 23:12:14,113 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-22 23:12:14,349 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:12:14,351 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-22 23:17:14,361 | INFO | Starting calendar processing...
+2025-12-22 23:17:14,361 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-22 23:17:14,566 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:17:14,567 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-22 23:17:14,726 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:17:14,728 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-22 23:17:15,804 | INFO | Processing events for date: 2025-12-22 (HinduHolidays)
+2025-12-22 23:17:15,805 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-22 23:17:15,805 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-22 23:17:15,957 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:17:15,960 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-22 23:22:15,972 | INFO | Starting calendar processing...
+2025-12-22 23:22:15,972 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-22 23:22:16,160 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:22:16,162 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-22 23:22:16,329 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:22:16,331 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-22 23:22:17,390 | INFO | Processing events for date: 2025-12-22 (HinduHolidays)
+2025-12-22 23:22:17,390 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-22 23:22:17,390 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-22 23:22:17,548 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:22:17,550 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-22 23:27:17,562 | INFO | Starting calendar processing...
+2025-12-22 23:27:17,562 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-22 23:27:17,832 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:27:17,834 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-22 23:27:18,099 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:27:18,101 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-22 23:27:20,029 | INFO | Processing events for date: 2025-12-22 (HinduHolidays)
+2025-12-22 23:27:20,029 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-22 23:27:20,029 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-22 23:27:20,199 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:27:20,202 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-22 23:32:20,214 | INFO | Starting calendar processing...
+2025-12-22 23:32:20,214 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-22 23:32:20,398 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:32:20,399 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-22 23:32:20,564 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:32:20,566 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-22 23:32:21,624 | INFO | Processing events for date: 2025-12-22 (HinduHolidays)
+2025-12-22 23:32:21,624 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-22 23:32:21,624 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-22 23:32:21,875 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:32:21,877 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-22 23:37:21,888 | INFO | Starting calendar processing...
+2025-12-22 23:37:21,888 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-22 23:37:22,077 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:37:22,078 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-22 23:37:22,247 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:37:22,249 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-22 23:37:23,479 | INFO | Processing events for date: 2025-12-22 (HinduHolidays)
+2025-12-22 23:37:23,479 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-22 23:37:23,480 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-22 23:37:23,629 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-22 23:37:23,630 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-22 23:42:35,598 | INFO | Starting calendar processing...
+2025-12-22 23:42:35,599 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-22 23:42:35,612 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: <urlopen error [Errno -3] Temporary failure in name resolution>
+2025-12-22 23:42:35,614 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-22 23:42:35,625 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: <urlopen error [Errno -3] Temporary failure in name resolution>
+2025-12-22 23:42:35,626 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-22 23:42:35,629 | ERROR | Error fetching iCal from http://www.addevent.com/feed/ahaadddaw.ics: <urlopen error [Errno -3] Temporary failure in name resolution>
+2025-12-22 23:42:35,629 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-22 23:42:35,639 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: <urlopen error [Errno -3] Temporary failure in name resolution>
+2025-12-22 23:42:35,641 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 02:13:45,535 | INFO | Starting calendar processing...
+2025-12-23 02:13:45,536 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 02:13:45,551 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: <urlopen error [Errno -3] Temporary failure in name resolution>
+2025-12-23 02:13:45,552 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:13:45,567 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: <urlopen error [Errno -3] Temporary failure in name resolution>
+2025-12-23 02:13:45,568 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 02:13:45,570 | ERROR | Error fetching iCal from http://www.addevent.com/feed/ahaadddaw.ics: <urlopen error [Errno -3] Temporary failure in name resolution>
+2025-12-23 02:13:45,570 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:13:45,582 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: <urlopen error [Errno -3] Temporary failure in name resolution>
+2025-12-23 02:13:45,583 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 02:18:45,595 | INFO | Starting calendar processing...
+2025-12-23 02:18:45,595 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 02:18:45,797 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:18:45,798 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:18:46,005 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:18:46,006 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 02:18:47,113 | INFO | Processing events for date: 2025-12-22 (HinduHolidays)
+2025-12-23 02:18:47,114 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 02:18:47,115 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:18:47,325 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:18:47,327 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 02:23:47,338 | INFO | Starting calendar processing...
+2025-12-23 02:23:47,338 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 02:23:47,679 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:23:47,681 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:23:47,945 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:23:47,948 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 02:23:49,560 | INFO | Processing events for date: 2025-12-22 (HinduHolidays)
+2025-12-23 02:23:49,561 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 02:23:49,561 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:23:49,961 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:23:49,964 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 02:28:49,973 | INFO | Starting calendar processing...
+2025-12-23 02:28:49,974 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 02:28:50,383 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:28:50,385 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:28:50,653 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:28:50,655 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 02:28:52,310 | INFO | Processing events for date: 2025-12-22 (HinduHolidays)
+2025-12-23 02:28:52,311 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 02:28:52,311 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:28:52,779 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:28:52,782 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 02:33:52,796 | INFO | Starting calendar processing...
+2025-12-23 02:33:52,796 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 02:33:52,994 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:33:52,996 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:33:53,174 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:33:53,176 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 02:33:54,299 | INFO | Processing events for date: 2025-12-22 (HinduHolidays)
+2025-12-23 02:33:54,299 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 02:33:54,300 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:33:54,481 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:33:54,484 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 02:38:54,498 | INFO | Starting calendar processing...
+2025-12-23 02:38:54,498 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 02:38:54,759 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:38:54,761 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:38:55,013 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:38:55,015 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 02:38:56,684 | INFO | Processing events for date: 2025-12-22 (HinduHolidays)
+2025-12-23 02:38:56,685 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 02:38:56,685 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:38:57,175 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:38:57,178 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 02:43:57,191 | INFO | Starting calendar processing...
+2025-12-23 02:43:57,192 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 02:43:57,464 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:43:57,467 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:43:57,682 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:43:57,684 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 02:43:58,954 | INFO | Processing events for date: 2025-12-22 (HinduHolidays)
+2025-12-23 02:43:58,955 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 02:43:58,955 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 02:43:59,133 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 02:43:59,135 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 04:24:37,924 | INFO | Starting calendar processing...
+2025-12-23 04:24:37,925 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 04:24:37,938 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: <urlopen error [Errno -3] Temporary failure in name resolution>
+2025-12-23 04:24:37,938 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 04:24:37,950 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: <urlopen error [Errno -3] Temporary failure in name resolution>
+2025-12-23 04:24:37,950 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 04:24:37,953 | ERROR | Error fetching iCal from http://www.addevent.com/feed/ahaadddaw.ics: <urlopen error [Errno -3] Temporary failure in name resolution>
+2025-12-23 04:24:37,953 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 04:24:37,963 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: <urlopen error [Errno -3] Temporary failure in name resolution>
+2025-12-23 04:24:37,965 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 05:59:09,145 | INFO | Starting calendar processing...
+2025-12-23 05:59:09,145 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 05:59:09,343 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 05:59:09,345 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 05:59:09,534 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 05:59:09,535 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 05:59:10,831 | INFO | Processing events for date: 2025-12-22 (HinduHolidays)
+2025-12-23 05:59:10,831 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 05:59:10,832 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 05:59:11,042 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 05:59:11,045 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 08:06:54,797 | INFO | Starting calendar processing...
+2025-12-23 08:06:54,798 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 08:06:54,973 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:06:54,975 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:06:55,156 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:06:55,158 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 08:06:56,281 | INFO | Processing events for date: 2025-12-23 (HinduHolidays)
+2025-12-23 08:06:56,281 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 08:06:56,282 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:06:56,469 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:06:56,473 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 08:11:56,491 | INFO | Starting calendar processing...
+2025-12-23 08:11:56,491 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 08:11:56,928 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:11:56,929 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:11:57,194 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:11:57,195 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 08:11:58,708 | INFO | Processing events for date: 2025-12-23 (HinduHolidays)
+2025-12-23 08:11:58,708 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 08:11:58,709 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:11:59,112 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:11:59,114 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 08:16:59,130 | INFO | Starting calendar processing...
+2025-12-23 08:16:59,130 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 08:16:59,312 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:16:59,314 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:16:59,489 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:16:59,491 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 08:17:01,090 | INFO | Processing events for date: 2025-12-23 (HinduHolidays)
+2025-12-23 08:17:01,090 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 08:17:01,091 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:17:01,258 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:17:01,261 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 08:22:01,267 | INFO | Starting calendar processing...
+2025-12-23 08:22:01,268 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 08:22:01,901 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:22:01,903 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:22:02,188 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:22:02,190 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 08:22:03,633 | INFO | Processing events for date: 2025-12-23 (HinduHolidays)
+2025-12-23 08:22:03,633 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 08:22:03,633 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:22:03,896 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:22:03,898 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 08:27:03,907 | INFO | Starting calendar processing...
+2025-12-23 08:27:03,907 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 08:27:04,075 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:27:04,076 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:27:04,235 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:27:04,236 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 08:27:05,314 | INFO | Processing events for date: 2025-12-23 (HinduHolidays)
+2025-12-23 08:27:05,314 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 08:27:05,314 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:27:05,624 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:27:05,625 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 08:32:05,633 | INFO | Starting calendar processing...
+2025-12-23 08:32:05,633 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 08:32:05,835 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:32:05,837 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:32:06,050 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:32:06,052 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 08:32:07,177 | INFO | Processing events for date: 2025-12-23 (HinduHolidays)
+2025-12-23 08:32:07,177 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 08:32:07,178 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:32:07,367 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:32:07,370 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 08:37:07,380 | INFO | Starting calendar processing...
+2025-12-23 08:37:07,380 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 08:37:07,652 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:37:07,653 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:37:07,868 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:37:07,869 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 08:37:08,987 | INFO | Processing events for date: 2025-12-23 (HinduHolidays)
+2025-12-23 08:37:08,988 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 08:37:08,989 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:37:09,216 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:37:09,218 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 08:42:09,226 | INFO | Starting calendar processing...
+2025-12-23 08:42:09,226 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 08:42:09,438 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:42:09,440 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:42:09,645 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:42:09,646 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 08:42:10,745 | INFO | Processing events for date: 2025-12-23 (HinduHolidays)
+2025-12-23 08:42:10,745 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 08:42:10,746 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:42:10,918 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:42:10,921 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 08:47:10,934 | INFO | Starting calendar processing...
+2025-12-23 08:47:10,935 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 08:47:11,175 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:47:11,177 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:47:11,339 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:47:11,341 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 08:47:12,445 | INFO | Processing events for date: 2025-12-23 (HinduHolidays)
+2025-12-23 08:47:12,446 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 08:47:12,446 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:47:12,610 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:47:12,613 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 08:52:12,623 | INFO | Starting calendar processing...
+2025-12-23 08:52:12,623 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 08:52:12,984 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:52:12,985 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:52:13,417 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:52:13,420 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 08:52:15,084 | INFO | Processing events for date: 2025-12-23 (HinduHolidays)
+2025-12-23 08:52:15,085 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 08:52:15,085 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:52:15,446 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:52:15,448 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 08:57:15,458 | INFO | Starting calendar processing...
+2025-12-23 08:57:15,458 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 08:57:15,697 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:57:15,700 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:57:15,900 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:57:15,902 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 08:57:17,042 | INFO | Processing events for date: 2025-12-23 (HinduHolidays)
+2025-12-23 08:57:17,042 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 08:57:17,043 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 08:57:17,200 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 08:57:17,203 | INFO | Successfully saved 0 total events to /app/data/calendar.json
+2025-12-23 09:02:17,215 | INFO | Starting calendar processing...
+2025-12-23 09:02:17,215 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics
+2025-12-23 09:02:17,431 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/aidenquinkelly%40gmail.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 09:02:17,433 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics
+2025-12-23 09:02:17,643 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/algcqus1atcspkbsma50hamg7k%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 09:02:17,645 | INFO | Fetching iCal data from: http://www.addevent.com/feed/ahaadddaw.ics
+2025-12-23 09:02:18,844 | INFO | Processing events for date: 2025-12-23 (HinduHolidays)
+2025-12-23 09:02:18,844 | INFO | Processed 101 total events, found 0 for today (HinduHolidays)
+2025-12-23 09:02:18,845 | INFO | Fetching iCal data from: https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics
+2025-12-23 09:02:19,055 | ERROR | Error fetching iCal from https://calendar.google.com/calendar/ical/dbfg8hsh4l5852r17tob2mcc34%40group.calendar.google.com/public/basic.ics: HTTP Error 404: Not Found
+2025-12-23 09:02:19,058 | INFO | Successfully saved 0 total events to /app/data/calendar.json

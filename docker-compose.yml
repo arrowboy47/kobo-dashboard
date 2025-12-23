@@ -7,6 +7,7 @@ services:
     restart: unless-stopped
     volumes:
       - calendar_data:/app/data
+
     environment:
       - CALENDAR_JSON_PATH=/app/data/calendar.json
     env_file:
@@ -28,6 +29,7 @@ services:
       - "3333:3333"
     volumes:
       - calendar_data:/app/data
+      - ./pics:/app/pics:ro,Z
     environment:
       - CALENDAR_JSON_PATH=/app/data/calendar.json
       - PORT=3333

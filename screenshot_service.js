@@ -24,6 +24,8 @@ const CALENDAR_JSON = process.env.CALENDAR_JSON_PATH || './calendar.json';
 const SCREENSHOT_INTERVAL_MINUTES = parseInt(process.env.SCREENSHOT_INTERVAL_MINUTES || '6');
 const SCREENSHOT_WIDTH = parseInt(process.env.SCREENSHOT_WIDTH || '1680');
 const SCREENSHOT_HEIGHT = parseInt(process.env.SCREENSHOT_HEIGHT || '1264');
+const PICS_DIR = "/app/pics";
+
 
 function log(message) {
   const timestamp = new Date().toISOString();
@@ -181,13 +183,41 @@ async function setupExpressServer() {
   // Configuration endpoint for frontend
   app.get('/api/config', (req, res) => {
     res.json({
-      timezone: process.env.TIMEZONE || 'Europe/London',
+      timezone: process.env.TIMEZONE || 'America/Los_Angeles',
+
+      // screen shot stuff
+      screenshotWidth: parseInt(process.env.SCREENSHOT_WIDTH || '1680', 10),
+      screenshotHeight: parseInt(process.env.SCREENSHOT_HEIGHT || '1264', 10),
+			
       weather: {
-        lat: parseFloat(process.env.WEATHER_LAT || '51.5074'),
-        lon: parseFloat(process.env.WEATHER_LON || '-0.1278'),
-        name: process.env.WEATHER_NAME || 'London, UK'
+        lat: parseFloat(process.env.WEATHER_LAT || '37.4419'),
+        lon: parseFloat(process.env.WEATHER_LON || '-122.1429'),
+        name: process.env.WEATHER_NAME || 'Palo Alto, CA'
       }
     });
+  });
+  
+  // rand photo api for frontend
+  app.use('/pics', express.static('/app/pics'));
+  app.get("/api/photo", (req, res) => {
+  try {
+    const files = fs
+      .readdirSync(PICS_DIR)
+      .filter(f => /\.(jpg|jpeg|png)$/i.test(f));
+
+    if (files.length === 0) {
+      return res.status(404).json({ error: "No images found" });
+    }
+
+    const randomFile = files[Math.floor(Math.random() * files.length)];
+
+    res.json({
+      url: `/pics/${randomFile}`
+    });
+  } catch (err) {
+    console.error("Photo API error:", err);
+    res.status(500).json({ error: "Failed to load photos" });
+  }
   });
   
   // Health check endpoint
