@@ -225,12 +225,14 @@
 
 			// Update city name if available, else use configured location
 			const cityDiv = document.querySelector(".weather__city");
-
-			if (weatherData && weatherData.timezone) {
+			if (cityDiv) {
+			  if (weatherData && weatherData.timezone) {
 				cityDiv.textContent = `📍 ${weatherData.timezone.replace("_", " ")}`;
-			} else {
+			  } else {
 				cityDiv.textContent = `📍 ${APP_CONFIG.weather.name}`;
+			  }
 			}
+
 			// Sunrise / Sunset
 			const sunriseEl = document.getElementById("sunrise-time");
 			const sunsetEl = document.getElementById("sunset-time");
@@ -300,24 +302,20 @@
 
 			// Add pretty timestamp to weather__timestamp-time (once per page load)
 			function updateWeatherTimestamp() {
-				// Use configured timezone
-				const now = new Date(
-					new Date().toLocaleString(APP_CONFIG.localeString || "en-US", {
-						timeZone: APP_CONFIG.timezone,
-					})
-				);
-				// Get time in configured timezone
-				const timezoneTime = new Date(now.toLocaleString(APP_CONFIG.localeString, {timeZone: APP_CONFIG.timezone}));
-				const day = String(timezoneTime.getDate()).padStart(2, '0');
-				const month = String(timezoneTime.getMonth() + 1).padStart(2, '0');
-				const hour = String(timezoneTime.getHours()).padStart(2, '0');
-				const minute = String(timezoneTime.getMinutes()).padStart(2, '0');
-				const pretty = `${month}/${day} ${hour}:${minute}`;
-				const span = document.querySelector('.weather__timestamp-time');
+			  const parts = new Intl.DateTimeFormat(APP_CONFIG.localeString || "en-US", {
+				timeZone: APP_CONFIG.timezone,
+				month: "2-digit",
+				day: "2-digit",
+				hour: "2-digit",
+				minute: "2-digit",
+				hour12: false,
+			  }).formatToParts(new Date());
 
-				if (span) {
-					span.textContent = pretty;
-				}
+			  const get = (t) => parts.find(p => p.type === t)?.value || "";
+			  const pretty = `${get("month")}/${get("day")} ${get("hour")}:${get("minute")}`;
+
+			  const span = document.querySelector(".weather__timestamp-time");
+			  if (span) span.textContent = pretty;
 			}
 
 			updateWeatherTimestamp();
@@ -560,10 +558,6 @@
 			font-weight: normal;
 		}
 
-		.weather__city {
-			margin-top: 30px;
-		}
-
 		.weather__timestamp {
 			position: absolute;
 			bottom: 30px;
@@ -671,6 +665,66 @@
 			color: #666;
 			font-weight: normal;
 		}
+		
+		.goals {
+		  display: flex;
+		  flex-direction: column;
+		  gap: 12px;
+		  flex: 1 1 auto;          /* this makes it take remaining vertical space */
+		  min-height: 0;           /* important for flex children */
+		}
+
+		.goals__title {
+		  font-size: 32px;
+		  font-weight: 700;
+		  text-align: center;
+		  margin-top: 65px;
+		}
+
+		.bingo {
+		  flex: 1 1 auto;
+		  min-height: 0;
+		  display: grid;
+		  grid-template-columns: repeat(4, 1fr);
+		  grid-auto-rows: 1fr;
+		  gap: 10px;
+		  /* gap above the board */
+		  margin-top: 10px;
+		}
+
+		.bingo__cell {
+		  position: relative;
+		  border: 3px solid #111;
+		  border-radius: 14px;
+		  padding: 14px;
+		  font-size: 22px;
+		  line-height: 1.15;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  text-align: center;
+		}
+
+		/* “crossed off” state */
+		.bingo__cell.done::before,
+		.bingo__cell.done::after {
+		  content: "";
+		  position: absolute;
+		  left: 10%;
+		  right: 10%;
+		  top: 50%;
+		  border-top: 5px solid #111;
+		  transform-origin: center;
+		}
+
+		.bingo__cell.done::before { transform: rotate(45deg); }
+		.bingo__cell.done::after  { transform: rotate(-45deg); }
+
+		/* Optional: slightly dim completed goals */
+		.bingo__cell.done {
+		  opacity: 0.75;
+		}
+
 	</style>
 </head>
 
@@ -710,10 +764,30 @@
 						<div class="weather__forecast-temp">20°C / 12°C</div>
 					</div>
 				</div>
+			
+			<div class="goals">
+			  <div class="goals__title">2026 Goals Bingo</div>
 
+			  <div class="bingo" id="bingo">
+				<div class="bingo__cell">Read 10 books</div>
+				<div class="bingo__cell">Hold convo in Hindi & Span</div>
+				<div class="bingo__cell">Finish scuba</div>
+				<div class="bingo__cell">Full-time job</div>
+				<div class="bingo__cell done">Free!</div>
+				<div class="bingo__cell">Finish pond</div>
+				<div class="bingo__cell">Explore new places(bars, clubs, bay events)</div>
+				<div class="bingo__cell">Travel out of country</div>
+				<div class="bingo__cell">Better, consistent planning</div>
+				<div class="bingo__cell">New Hobby(maybe sewing or tiktok vids)</div>
+				<div class="bingo__cell">More stats + ML + AI concepts</div>
+				<div class="bingo__cell">Finishing server</div>
+				<div class="bingo__cell">One more source of income</div>
+				<div class="bingo__cell">More intentional time with Dia, friends, and fam</div>
+				<div class="bingo__cell">Consistent gym 4 days a week</div>
+				<div class="bingo__cell">Apply to masters program</div>
 
-				<!-- Placeholder for city and country code -->
-				<div class="weather__city">City, CC</div>
+			  </div>
+			</div>
 
 				<div class="weather__timestamp">
 					Last updated:
