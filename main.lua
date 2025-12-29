@@ -11,7 +11,7 @@ local md5 = require("ffi.md5") -- provides md5.sumFile(filename)
 local _ = require("gettext")
 
 -- ==== CONFIG (edit these) ====
-local URL = "http://10.0.0.58:3333/today.png" -- URL to fetch the PNG from. If using a local server, use the device's LAN IP. If using Docker, you might not need to change anything
+local URL = "http://:3333/today.png" -- URL to fetch the PNG from. If using a local server, use the device's LAN IP. If using Docker, you might not need to change anything
 local OUT_DIR = "/mnt/onboard/koreader/screensaver"
 local OUT_PATH = OUT_DIR .. "/today.png"
 local INTERVAL_S = 300 -- check every minute. Change as desired.
