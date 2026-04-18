@@ -100,7 +100,7 @@ def main():
     """Main function to parse calendars and output JSON."""
     
     # Load calendar configuration from environment variables
-    timezone_name = os.getenv('TIMEZONE', 'Europe/London')
+    timezone_name = os.getenv('TIMEZONE', 'America/Los_Angeles')
     timezone_obj = pytz.timezone(timezone_name)
     
     ical_urls = os.getenv('ICAL_URLS', '').split(',')

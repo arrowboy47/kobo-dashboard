@@ -19,6 +19,9 @@ const __dirname = path.dirname(__filename);
 // Load environment variables
 dotenv.config();
 
+// Standardize timezone for the process and any launched browsers
+process.env.TZ = process.env.TIMEZONE || 'America/Los_Angeles';
+
 const PORT = process.env.PORT || 3333;
 const CALENDAR_JSON = process.env.CALENDAR_JSON_PATH || './calendar.json';
 const SCREENSHOT_INTERVAL_MINUTES = parseInt(process.env.SCREENSHOT_INTERVAL_MINUTES || '6');

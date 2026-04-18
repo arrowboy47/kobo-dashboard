@@ -31,7 +31,7 @@ class CalendarProcessor:
         load_dotenv()
         
         # Get timezone from environment variable
-        timezone_name = os.getenv('TIMEZONE', 'Europe/London')
+        timezone_name = os.getenv('TIMEZONE', 'America/Los_Angeles')
         self.timezone = pytz.timezone(timezone_name)
         logger.info(f"Using timezone: {timezone_name}")
         

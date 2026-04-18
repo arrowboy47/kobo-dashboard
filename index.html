@@ -52,11 +52,11 @@
 		 */
 		function getCurrentDateInfo() {
 			// Always use the configured timezone for calendar logic
-			const now = new Date(new Date().toLocaleString(APP_CONFIG.localeString, {timeZone: APP_CONFIG.timezone}));
+			const now = new Date(new Date().toLocaleString("en-US", {timeZone: APP_CONFIG.timezone}));
 			return {
 				year: now.getFullYear(),
 				month: now.getMonth(), // 0-indexed
-				monthName: now.toLocaleString("default", {month: "long"}),
+				monthName: now.toLocaleString(APP_CONFIG.localeString || "default", {month: "long"}),
 				daysInMonth: new Date(
 					now.getFullYear(),
 					now.getMonth() + 1,
@@ -92,7 +92,7 @@
 					} else if (day <= info.daysInMonth) {
 						td.textContent = day;
 						// Highlight today
-						const now = new Date(new Date().toLocaleString(APP_CONFIG.localeString, {timeZone: APP_CONFIG.timezone}));
+						const now = new Date(new Date().toLocaleString("en-US", {timeZone: APP_CONFIG.timezone}));
 						if (
 							day === now.getDate() &&
 							info.month === now.getMonth() &&
@@ -337,17 +337,21 @@
 				// Clear any previous events
 				timeline.innerHTML = "";
 
-				const now = new Date();
-				dateDiv.textContent = now.getDate();
-				weekdayDiv.textContent = now.toLocaleString("default", {
+				// Get current time in target timezone
+				const nowTZ = new Date(new Date().toLocaleString("en-US", {timeZone: APP_CONFIG.timezone}));
+				dateDiv.textContent = nowTZ.getDate();
+				weekdayDiv.textContent = nowTZ.toLocaleString(APP_CONFIG.localeString || "default", {
 					weekday: "long",
 				});
 
-				// Filter events that are today
+				const todayString = nowTZ.toLocaleDateString('en-US');
+
+				// Filter events that are today in the target timezone
 				const todayEvents = events.filter((event) => {
-					const start = event.start.dateTime || event.start.date; // all-day vs timed
-					const eventDate = new Date(start);
-					return eventDate.toDateString() === now.toDateString();
+					const start = event.start.dateTime || event.start.date;
+					// Standardize event start to the target timezone's date string
+					const eventDateString = new Date(new Date(start).toLocaleString("en-US", {timeZone: APP_CONFIG.timezone})).toLocaleDateString('en-US');
+					return eventDateString === todayString;
 				});
 
 				if (todayEvents.length === 0) {
