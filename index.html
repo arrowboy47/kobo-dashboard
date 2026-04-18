@@ -293,12 +293,13 @@
       await loadRandomPhoto();
 
 
-      renderCalendar();
+      try { renderCalendar(); } catch(ex) { console.error('renderCalendar failed:', ex && ex.message); }
 
       // Set up Weather API response and rendering
-
+      console.log('Starting weather fetch, APP_CONFIG.weather:', JSON.stringify(APP_CONFIG.weather));
       try {
         const loc = await getUserLocation();
+        console.log('Got location:', JSON.stringify(loc));
         const weatherData = await fetchWeather(loc.lat, loc.lon);
         renderWeather(weatherData);
 
