@@ -78,7 +78,8 @@ class CalendarProcessor:
             cal = Calendar.from_ical(ical_data)
             
             # Get today in configured timezone
-            today = datetime.now(self.timezone).date()
+            now = datetime.now(timezone.utc).astimezone(self.timezone)
+            today = now.date()
             logger.info(f"Processing events for date: {today} ({calendar_name})")
             
             events = []

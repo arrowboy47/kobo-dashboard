@@ -27,7 +27,8 @@ def parse_ical_url(url, calendar_name, timezone_obj):
         cal = Calendar.from_ical(ical_data)
         
         # Get today in configured timezone
-        today = datetime.now(timezone_obj).date()
+        now = datetime.now(timezone.utc).astimezone(timezone_obj)
+        today = now.date()
         
         events = []
         
