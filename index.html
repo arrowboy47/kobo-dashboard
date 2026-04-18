@@ -303,6 +303,7 @@
         renderWeather(weatherData);
 
       } catch (e) {
+        console.error('Weather block failed:', e && e.message, e && e.stack);
         const weatherForecastDiv =
           document.querySelector(".weather__forecast");
         weatherForecastDiv.innerHTML = "<div>Weather unavailable</div>";
