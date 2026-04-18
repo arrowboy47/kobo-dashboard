@@ -105,6 +105,11 @@ class ScreenshotService {
       }
       
       const page = await this.browser.newPage();
+
+      // Pipe browser console logs to the terminal
+      page.on('console', msg => {
+        log(`[BROWSER] ${msg.type().toUpperCase()}: ${msg.text()}`);
+      });
       
       // Set viewport
       await page.setViewport({ 

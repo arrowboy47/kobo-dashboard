@@ -6,8 +6,11 @@
   <title>Kobo Dashboard | Calendar, Schedule and Weather Forecast</title>
   <script>
     // Global configuration - loaded from API via .env settings
-    let APP_CONFIG = {};
-
+    let APP_CONFIG = {
+    	timezone: 'America/Los_Angeles',
+    	localeString: 'en-US',
+    	weather: { lat: 37.4419, lon: -122.1429, name: 'Palo Alto, CA' }
+    };
     /**
      * Load app configuration from API
      */
