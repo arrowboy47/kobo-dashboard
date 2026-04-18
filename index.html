@@ -207,8 +207,11 @@
     	const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
     	// Get today's date string in YYYY-MM-DD format in target timezone
-    	const nowTZ = new Date(new Date().toLocaleString("en-US", {timeZone: APP_CONFIG.timezone}));
-    	const todayISO = nowTZ.toISOString().split('T')[0];
+    	const todayParts = new Intl.DateTimeFormat("en-CA", {
+    		timeZone: APP_CONFIG.timezone,
+    		year: "numeric", month: "2-digit", day: "2-digit"
+    	}).format(new Date());
+    	const todayISO = todayParts; // en-CA gives YYYY-MM-DD directly
 
     	const weatherForecastDiv = document.querySelector(".weather__forecast");
     	weatherForecastDiv.innerHTML = "";
