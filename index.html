@@ -11,25 +11,26 @@
     	localeString: 'en-US',
     	weather: { lat: 37.4419, lon: -122.1429, name: 'Palo Alto, CA' }
     };
-    /**
-     * Load app configuration from API
-     */
     async function loadAppConfig() {
-      try {
-        const response = await fetch('/api/config');
-        if (response.ok) {
-          APP_CONFIG = await response.json();
-          // Set CSS variables for responsive dimensions
-          if (APP_CONFIG.screenshotWidth && APP_CONFIG.screenshotHeight) {
-            document.documentElement.style.setProperty('--dashboard-width', APP_CONFIG.screenshotWidth + 'px');
-            document.documentElement.style.setProperty('--dashboard-height', APP_CONFIG.screenshotHeight + 'px');
-          }
-        }
-      } catch (error) {
-        console.log('Using default timezone and weather configuration');
-      }
+    	try {
+    		console.log('Fetching app config...');
+    		const response = await fetch('/api/config');
+    		if (response.ok) {
+    			APP_CONFIG = await response.json();
+    			console.log('App config loaded successfully:', JSON.stringify(APP_CONFIG));
+    			// Set CSS variables for responsive dimensions
+    			if (APP_CONFIG.screenshotWidth && APP_CONFIG.screenshotHeight) {
+    				document.documentElement.style.setProperty('--dashboard-width', APP_CONFIG.screenshotWidth + 'px');
+    				document.documentElement.style.setProperty('--dashboard-height', APP_CONFIG.screenshotHeight + 'px');
+    			}
+    		} else {
+    			console.error('Failed to load app config:', response.status, response.statusText);
+    		}
+    	} catch (error) {
+    		console.error('Error in loadAppConfig:', error);
+    		console.log('Using default timezone and weather configuration');
+    	}
     }
-
     // get a random photo
     async function loadRandomPhoto() {
       try {
