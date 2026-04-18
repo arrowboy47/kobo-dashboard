@@ -83,6 +83,7 @@
       document.querySelector(".calendar__year").textContent = info.year;
 
       const tbody = document.querySelector(".calendar__table tbody");
+      if (!tbody) return;
       tbody.innerHTML = "";
       let day = 1;
       let weeks = [];
@@ -787,14 +788,6 @@
           <h2>|</h2>
           <h2 class="calendar__year">2025</h2>
         </div>
-        <table class="calendar__table">
-          <thead>
-            <tr>
-              <th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
       </div>
 
       <!-- Placeholder for weather -->
