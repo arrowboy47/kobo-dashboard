@@ -110,6 +110,13 @@ class ScreenshotService {
       page.on('console', msg => {
         log(`[BROWSER] ${msg.type().toUpperCase()}: ${msg.text()}`);
       });
+      // Log failed resource requests so we can identify 404s
+      page.on('requestfailed', req => {
+        log(`[BROWSER] REQUEST FAILED: ${req.url()} — ${req.failure()?.errorText}`);
+      });
+      page.on('response', res => {
+        if (res.status() >= 400) log(`[BROWSER] HTTP ${res.status()}: ${res.url()}`);
+      });
       
       // Set viewport
       await page.setViewport({ 
