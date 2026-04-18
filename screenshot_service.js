@@ -123,10 +123,18 @@ class ScreenshotService {
       await new Promise(resolve => setTimeout(resolve, 2000));
       
       // Take screenshot
+      const screenshotPath = path.join(__dirname, 'today.png');
       await page.screenshot({
-        path: path.join(__dirname, 'today.png'),
+        path: screenshotPath,
         fullPage: false
       });
+      
+      // Ensure the file is world-readable so the host can access it
+      try {
+        fs.chmodSync(screenshotPath, 0o644);
+      } catch (chmodError) {
+        log(`Warning: Could not set permissions on today.png: ${chmodError.message}`);
+      }
       
       await page.close();
       
