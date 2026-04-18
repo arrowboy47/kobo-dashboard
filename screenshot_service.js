@@ -131,8 +131,8 @@ class ScreenshotService {
         timeout: 30000 
       });
       
-      // Wait a bit for any dynamic content to load
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Wait for dynamic content (weather API fetch, etc.) to complete
+      await new Promise(resolve => setTimeout(resolve, 5000));
       
       // Take screenshot
       const screenshotPath = path.join(__dirname, 'today.png');
